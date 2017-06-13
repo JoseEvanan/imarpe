@@ -27,6 +27,9 @@
 <!-- CSS Theme -->
 <link id="theme" rel="stylesheet" href="assets/css/themes/rounded/theme_blue-green.min.css" />
 
+<!-- Estilos Propios -->
+<link rel="stylesheet" href="assets/css/estilos.css">
+
 </head>
 
 <body>
@@ -46,41 +49,46 @@
 <header id="header">
     
     <!-- Logo -->
-    <img src="logo_enfen.png"  height="80" width="80">
+    <a class="header-logo" href="index.html">
+        <img src="logo_enfen.png"  height="80" width="80">
+    </a>
     <!--
     <a href="index.html" class="logo logo-primary"><span>H</span></a>
      -->
     <!-- Navigation -->
     <nav id="nav-main">
-        <li><a href="index.html"><i class="li-weather21"></i>Index</a></li>
         <ul class="nav nav-main-vertical">
-            <li><a href="javascript:;"><i class="li-home"></i>Nosotros</a>
-                <ul class="sub-menu" style="display:block;">
-                     <li><a href="quienes-somos.html"><i class="ti-file"></i>¿Quienes Somos?</a></li>
-                     <li><a href="#product"><i class="ti-file"></i>Misión</a></li>
-                     <li><a href="#product"><i class="ti-file"></i>Visión</a></li>
-                     <li><a href="historia.html"><i class="ti-file"></i>Historia</a></li>
+            <li><a id="nav-nosotros" class="nav-submenu" ><i class="li-home"></i>Nosotros</a>
+                <ul id="sub-nosotros" class="sub-menu" style="display:block;">
+                     <li><a href="quienes-somos.html"><i class="fa fa-address-book"></i>¿Quienes Somos?</a></li>
+                     <li><a href="#product"><i class="fa fa-id-card"></i>Misión</a></li>
+                     <li><a href="#product"><i class="fa fa-address-card"></i>Visión</a></li>
+                     <li><a href="historia.html"><i class="fa fa-id-badge"></i>Historia</a></li>
 
                 </ul>
             </li>
-            <li><a href="javascript:;"><i class="li-home"></i>Integrantes</a>
-                <ul class="sub-menu" style="display:block;">
-                     <li><a href="imarpe.html"><i class="ti-file"></i>IMARPE</a></li>
-                     <li><a href="dhn.html"><i class="ti-file"></i>DHN</a></li>
-                     <li><a href="igp.html"><i class="ti-file"></i>IGP</a></li>
-                     <li><a href="ana.html"><i class="ti-file"></i>ANA</a></li>
-                     <li><a href="indeci.html"><i class="ti-file"></i>INDECI</a></li>
-                     <li><a href="senamhi.html"><i class="ti-file"></i>Senamhi</a></li>
+            <li><a id="nav-integrantes" class="nav-submenu" href="javascript:;"><i class="fa fa-users"></i>Integrantes</a>
+                <ul id="sub-integrantes" class="sub-menu" style="display:block;">
+                     <li><a href="imarpe.html"><i class="fa fa-building"></i>IMARPE</a></li>
+                     <li><a href="dhn.html"><i class="fa fa-building"></i>DHN</a></li>
+                     <li><a href="igp.html"><i class="fa fa-building"></i>IGP</a></li>
+                     <li><a href="ana.html"><i class="fa fa-building"></i>ANA</a></li>
+                     <li><a href="indeci.html"><i class="fa fa-building"></i>INDECI</a></li>
+                     <li><a href="senamhi.html"><i class="fa fa-building"></i>Senamhi</a></li>
                 </ul>
             </li>
-            <li><a href="#"><i class="li-weather21"></i>Clima</a></li>
-            <li><a href="#"><i class="li-weather18"></i>Oceanos</a></li>
-            <li><a href="#"><i class="li-weather17"></i>Pesca</a></li>
-            <li><a href="#"><i class="li-eye"></i>Satélites</a></li>
-            <li><a href="#"><i class="li-feedback"></i>Noticias</a></li>
-            <li><a href="#"><i class="li-search1"></i>Investigacion</a></li>
-            <li><a href="#"><i class="li-diagram"></i>Gráficos</a></li>
-            <li><a href="#"><i class="li-heart"></i>Suntuarios</a></li>
+            <li><a id="nav-noticias" class="nav-submenu"><i class="li-feedback"></i>Noticias</a>
+              <ul id="sub-noticias" class="sub-menu" style="display:block;">
+                <li><a href="news.html"><i class="li-weather21"></i>Todos</a></li>
+                <li><a href="#"><i class="li-weather21"></i>Clima</a></li>
+                <li><a href="#"><i class="li-weather18"></i>Oceanos</a></li>
+                <li><a href="#"><i class="li-weather17"></i>Pesca</a></li>
+                <li><a href="#"><i class="li-eye"></i>Satélites</a></li>
+                <li><a href="#"><i class="li-search1"></i>Investigacion</a></li>
+                <li><a href="#"><i class="li-diagram"></i>Gráficos</a></li>
+                <li><a href="#"><i class="li-diagram"></i>Otros</a></li>
+              </ul>
+            </li>
         </ul>
     </nav>
 
@@ -101,7 +109,7 @@
             <div class="container container-md">
                 <div class="post-content">
                     <span class="date text-muted"><a href="blog.html" class="go-back"><i class="ti-angle-left"></i></a>21 July 2016</span>
-                    <h1 class="post-title">Meet Désirée Tommasi: </h1>
+                    <h1 class="post-title">Noticia de ENFEN:</h1>
                     <h2 class="post-title">Pioneer in new field of fish forecasting</h2>
                     <p class="lead">Long known for weather forecasting and climate prediction, NOAA is pioneering a new type of forecasting -- fish forecasting.  Meet Désirée Tommasi, Ph.D., a young oceanographer working at  NOAA’s Geophysical Fluid Dynamics Laboratory in Princeton, N.J. who has just published research about forecasting the Pacific sardine, one of the nation’s most storied fish, made famous by John Steinbeck’s Cannery Row </p>
                     <p>How did you get interested in forecasting fisheries?</p>
@@ -112,7 +120,10 @@
                 </div>
             </div>
         </article>
-        
+        <div class="share-buttons">
+            <img src="http://howmadareyou.com/wp-content/themes/MAD/images/share-facebook.png" alt="">
+            <img src="http://howmadareyou.com/wp-content/themes/MAD/images/share-twitter.png" alt="">
+        </div>
     </section>
 
 </div>
@@ -268,6 +279,9 @@
 
 <!-- JS Styleswitcher -->
 <script src="styleswitcher/styleswitcher.js"></script>
+
+<!-- Mis Scripts -->
+<script src="assets/js/scripts.js"></script>
 
 </body>
 

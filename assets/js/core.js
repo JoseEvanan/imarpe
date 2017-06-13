@@ -52,10 +52,10 @@ var Core = {
         },
         backgrounds: function() {
             // Image
-            $('.bg-image, .post.single .post-image').each(function(){
-                var src = $(this).children('img').attr('src');
-                $(this).css('background-image','url('+src+')').children('img').hide();
-            });
+            // $('.bg-image, .post.single .post-image').each(function(){
+            //     var src = $(this).children('img').attr('src');
+            //     $(this).css('background-image','url('+src+')').children('img').hide();
+            // });
             
             //Video 
             var $bgVideo = $('.bg-video');

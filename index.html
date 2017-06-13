@@ -27,6 +27,9 @@
 <!-- CSS Theme -->
 <link id="theme" rel="stylesheet" href="assets/css/themes/rounded/theme_blue-green.min.css" />
 
+<!-- Estilos Propios -->
+<link rel="stylesheet" href="assets/css/estilos.css">
+
 </head>
 
 <body>
@@ -49,45 +52,48 @@
 <header id="header">
     
     <!-- Logo -->
-    <img src="logo_enfen.png"  height="80" width="80">
+    <a class="header-logo" href="index.html">
+        <img src="logo_enfen.png"  height="80" width="80">
+    </a>
     <!--
     <a href="index.html" class="logo logo-primary"><span>H</span></a>
      -->
     <!-- Navigation -->
     <nav id="nav-main">
-        <li><a href="index.html"><i class="li-weather21"></i>Index</a></li>
         <ul class="nav nav-main-vertical">
-            <li><a href="javascript:;"><i class="li-home"></i>Nosotros</a>
-                <ul class="sub-menu" style="display:block;">
-                     <li><a href="quienes-somos.html"><i class="ti-file"></i>¿Quienes Somos?</a></li>
-                     <li><a href="#product"><i class="ti-file"></i>Misión</a></li>
-                     <li><a href="#product"><i class="ti-file"></i>Visión</a></li>
-                     <li><a href="historia.html"><i class="ti-file"></i>Historia</a></li>
+            <li><a id="nav-nosotros" class="nav-submenu" ><i class="li-home"></i>Nosotros</a>
+                <ul id="sub-nosotros" class="sub-menu" style="display:block;">
+                     <li><a href="quienes-somos.html"><i class="fa fa-address-book"></i>¿Quienes Somos?</a></li>
+                     <li><a href="#product"><i class="fa fa-id-card"></i>Misión</a></li>
+                     <li><a href="#product"><i class="fa fa-address-card"></i>Visión</a></li>
+                     <li><a href="historia.html"><i class="fa fa-id-badge"></i>Historia</a></li>
 
                 </ul>
             </li>
-            <li><a href="javascript:;"><i class="li-home"></i>Integrantes</a>
-                <ul class="sub-menu" style="display:block;">
-                     <li><a href="imarpe.html"><i class="ti-file"></i>IMARPE</a></li>
-                     <li><a href="dhn.html"><i class="ti-file"></i>DHN</a></li>
-                     <li><a href="igp.html"><i class="ti-file"></i>IGP</a></li>
-                     <li><a href="ana.html"><i class="ti-file"></i>ANA</a></li>
-                     <li><a href="indeci.html"><i class="ti-file"></i>INDECI</a></li>
-                     <li><a href="senamhi.html"><i class="ti-file"></i>Senamhi</a></li>
+            <li><a id="nav-integrantes" class="nav-submenu" href="javascript:;"><i class="fa fa-users"></i>Integrantes</a>
+                <ul id="sub-integrantes" class="sub-menu" style="display:block;">
+                     <li><a href="imarpe.html"><i class="fa fa-building"></i>IMARPE</a></li>
+                     <li><a href="dhn.html"><i class="fa fa-building"></i>DHN</a></li>
+                     <li><a href="igp.html"><i class="fa fa-building"></i>IGP</a></li>
+                     <li><a href="ana.html"><i class="fa fa-building"></i>ANA</a></li>
+                     <li><a href="indeci.html"><i class="fa fa-building"></i>INDECI</a></li>
+                     <li><a href="senamhi.html"><i class="fa fa-building"></i>Senamhi</a></li>
                 </ul>
             </li>
-            <li><a href="#"><i class="li-weather21"></i>Clima</a></li>
-            <li><a href="#"><i class="li-weather18"></i>Oceanos</a></li>
-            <li><a href="#"><i class="li-weather17"></i>Pesca</a></li>
-            <li><a href="#"><i class="li-eye"></i>Satélites</a></li>
-            <li><a href="#"><i class="li-feedback"></i>Noticias</a></li>
-            <li><a href="#"><i class="li-search1"></i>Investigacion</a></li>
-            <li><a href="#"><i class="li-diagram"></i>Gráficos</a></li>
-            <li><a href="#"><i class="li-heart"></i>Suntuarios</a></li>
+            <li><a id="nav-noticias" class="nav-submenu"><i class="li-feedback"></i>Noticias</a>
+              <ul id="sub-noticias" class="sub-menu" style="display:block;">
+                <li><a href="news.html"><i class="li-weather21"></i>Todos</a></li>
+                <li><a href="#"><i class="li-weather21"></i>Clima</a></li>
+                <li><a href="#"><i class="li-weather18"></i>Oceanos</a></li>
+                <li><a href="#"><i class="li-weather17"></i>Pesca</a></li>
+                <li><a href="#"><i class="li-eye"></i>Satélites</a></li>
+                <li><a href="#"><i class="li-search1"></i>Investigacion</a></li>
+                <li><a href="#"><i class="li-diagram"></i>Gráficos</a></li>
+                <li><a href="#"><i class="li-diagram"></i>Otros</a></li>
+              </ul>
+            </li>
         </ul>
     </nav>
-
-
 </header>
 <!-- Header / End -->
 
@@ -97,13 +103,17 @@
     <section id="intro" class="section intro fullheight bg-primary dark" style="background-color: #eaecef !important;">
 
         <!-- BG Image -->
-        <div class="bg-image bg-multiply bg-fixed" ><img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Peru_sat.png" alt=""></div >
+        <div class="bg-image bg-multiply bg-fixed" >
+            <img class="imagen-bg" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Peru_sat.png" alt="">
+            <div class="filtro-bg"></div>
+            
+        </div >
 
         <div class="container-custom v-center" data-local-scroll  >
             <div class="row"   >
                 <div class="col-xl-8"   >
                     <!-- Logo -->
-                    <img src="logo_enfen.png"  height="200" width="200">
+                    <!-- <img src="logo_enfen.png"  height="200" width="200"> -->
                     
                     <h2  class="display-3 animated" data-animation="fadeIn">Estudio Nacional del Fenómeno "El Niño"</h2>
                     <h4 class="text-muted mb-5">La Comisión ENFEN sustenta sus análisis en la Información proveniente de diversas redes de observación de las instituciones que la conforman. </h4>
@@ -139,12 +149,12 @@
                      -->
                 </div>
                 <div class="col-sm-3">
-                    <h5 class="mb-4">Product</h5>
+                    <h5 class="mb-4">Acerca De</h5>
                     <ul class="nav-footer">
-                        <li><a href="#">Basic</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Reviews</a></li>
-                        <li><a href="#">Specification</a></li>
+                        <li><a href="#">Quienes Somos</a></li>
+                        <li><a href="#">Mision</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Historia</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
@@ -321,6 +331,9 @@
 
 <!-- JS Styleswitcher -->
 <script src="styleswitcher/styleswitcher.js"></script>
+
+<!-- Mis Scripts -->
+<script src="assets/js/scripts.js"></script>
 
 </body>
 
